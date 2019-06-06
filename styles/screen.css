@@ -613,7 +613,7 @@ header .space {
   -o-animation: slide 8s linear infinite;
   -ms-animation: slide 8s linear infinite;
   animation: slide 8s linear infinite;
-  background-color: #f7da38;
+  background-color: #fcdc83;
   background-position: center center;
   -webkit-background-size: 240px;
   -moz-background-size: 240px;
@@ -654,6 +654,7 @@ main {
   text-align: left;
   word-break: normal;
   word-wrap: break-word;
+  background-image: url("https://raw.githubusercontent.com/Spycsh/SinoGerman_OverseaStudy/master/images/bg.jpg");
 }
 main a.article {
   color: #141414;
@@ -997,7 +998,7 @@ hr:after {
     overflow: hidden;
     text-align: right;
     padding: 40px;
-    max-width: 350px;
+    max-width: 200px;
   }
   body header .logo {
     margin-right: 0;
