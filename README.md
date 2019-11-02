@@ -16,7 +16,7 @@
 
 1. input by hand, add and remove rows easily and flexibly
 
-2. check empty and invalid input
+2. check empty and invalid input, the error will be shown with red error message where the problem is, and when users notice and click there, the error message will disappear automatically for input again
 
 3. detail information to get users know the input format
 
@@ -26,4 +26,6 @@
 
 6. reset function for either Ecust or THL scores
 
-7. special input in Ecust scores like "A" or "A-" will be converted into German GPA "1.0" and "1.3" with the standard
+7. input in Ecust scores like "98" or "60" will be converted into German GPA "1.0" or "4.0" with the standard
+
+8. special input in Ecust scores like "A" or "A-" will be converted into German GPA "1.0" and "1.3" with the standard
