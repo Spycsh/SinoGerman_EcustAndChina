@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <title>GPA calculator</title>
+    <link rel="stylesheet" href="css/gpaCalculate.css" />
+
+</head>
+
+<header>
+    <h1><center>GPA calculator</center></h1>
+</header>
+
+<body style="background-color:antiquewhite;">
+    <div class="main">
+        <!-- <div class="title">
+
+        </div> -->
+        <HR align=center width=90% color=#000000 SIZE=1> 
+
+        <div class="ecustScore">
+            <table id="table1">
+                <tr class="subTitle"><td colspan="3"><center>Ecust Courses</center></td></tr>
+                <tr>
+                    <td>Course Name<button onclick="editEcustCourseName()">edit</button></td>
+                    <td>Ecust score<a href="#" onmouseover="display()" onmouseout="disappear()">[details]</a>
+                        <div id="box1" class="box">
+                            Scores of Ecust must be a number you get for the course<br>
+                            usually between 0-100<br>
+                            or one of A, A-, B+, B, B-, C+, C, C-, D+, D, F.
+                    </div>
+                    
+                    </td>
+                    <td>credit<a href="#" onmouseover="displayGP()" onmouseout="disappearGP()">[details]</a>
+                        <div id="box3" class="box">
+                            credit of Ecust is a number measured by semester hours of the course<br>
+                        e.g 6 for Advanced Math, 4 for College English
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><input class="EcustCourseName" id="course1" type="text" value="course1" disabled></td>
+                    <td><input class="EcustScore" id="gradePoint1" type="text"></td>
+                    <td><input class="EcustCredit" id="credit1" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="EcustCourseName" id="course2" type="text" value="course2" disabled></td>
+                    <td><input class="EcustScore" id="gradePoint2" type="text"></td>
+                    <td><input class="EcustCredit" id="credit2" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="EcustCourseName" id="course3" type="text" value="course3" disabled></td>
+                    <td><input class="EcustScore" id="gradePoint3" type="text"></td>
+                    <td><input class="EcustCredit" id="credit3" type="text"></td>
+                </tr>
+                <!-- <tr>
+                    <td><input class="EcustCourseName" id="course4" type="text" value="course4" disabled></td>
+                    <td><input class="EcustScore" id="gradePoint4" type="text"></td>
+                    <td><input class="EcustCredit" id="credit4" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="EcustCourseName" id="course5" type="text" value="course5" disabled></td>
+                    <td><input class="EcustScore" id="gradePoint5" type="text"></td>
+                    <td><input class="EcustCredit" id="credit5" type="text"></td>
+                </tr> -->
+
+
+
+            </table>
+            <div class="courseAdd">
+                <span>Ecust Courses</span>
+                <input id="addNumEcust" class="addNum" type="number" min="1" max="50" value="5">
+                <button onclick="addEcustCourse();">add</button>
+                <button onclick="removeEcustCourse()">remove</button>
+                <button onclick="resetEcustCourse()">reset</button>
+            </div>
+        </div>
+
+        <div class="luebeckScore">
+            <table id="table2">
+                <tr class="subTitle"><td colspan="3"><center>THL Courses</center></td></tr>
+                <tr>
+                    <td>Course Name<button onclick="editTHLCourseName()">edit</button></td>
+                    <td>THL score<a href="#" onmouseover="displayTHL()" onmouseout="disappearTHL()">[details]</a>
+                        <div id="box2" class="box">
+                            Scores of THL must be a number in 1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0, 5.0<br>
+                        
+                    </div></td>
+                    <td>credit<a href="#" onmouseover="displayGPTHL()" onmouseout="disappearGPTHL()">[details]</a>
+                        <div id="box4" class="box">
+                            credit of THL is a number measured by semester hours of the course<br>
+                        e.g 4 for Internet Programming
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><input id="course1" class="THLCourseName" type="text" value="course1" disabled></td>
+                    <td><input id="gradePoint1" class="THLScore" type="text"></td>
+                    <td><input id="credit1" class="THLCredit" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input id="course2" class="THLCourseName" type="text" value="course2" disabled></td>
+                    <td><input id="gradePoint2" class="THLScore" type="text"></td>
+                    <td><input id="credit2" class="THLCredit" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input id="course3" class="THLCourseName" type="text" value="course3" disabled></td>
+                    <td><input id="gradePoint3" class="THLScore" type="text"></td>
+                    <td><input id="credit3" class="THLCredit" type="text"></td>
+                </tr>
+                <!-- <tr>
+                    <td><input id="course4" class="THLCourseName" type="text" value="course4" disabled></td>
+                    <td><input id="gradePoint4" class="THLScore" type="text"></td>
+                    <td><input id="credit4" class="THLCredit" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input id="course5" class="THLCourseName" type="text" value="course5" disabled></td>
+                    <td><input id="gradePoint5" class="THLScore" type="text"></td>
+                    <td><input id="credit5" class="THLCredit" type="text"></td>
+                </tr> -->
+
+
+
+            </table>
+
+            <!-- add course -->
+            <div class="courseAdd">
+                <span>THL Courses</span>
+                <input id="addNumTHL" class="addNum" type="number" min="1" max="50" value="5">
+                <button onclick="addTHLCourse();">add</button>
+                <button onclick="removeTHLCourse()">remove</button>
+                <button onclick="resetTHLCourse();">reset</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- <div><p>------------------------------------------------------------------------------------------------------------</p></div> -->
+    <HR align=center width=90% color=#000000 SIZE=1> 
+        
+        <div id="btnGroup">
+        <center>
+            <button onclick="calculate()">
+                start calculate
+            </button>
+            <!-- <button onclick="reset()">
+                reset
+            </button> -->
+
+        </center>
+
+    </div>
+
+
+    <script src="js/gpaCalculate.js"></script>
+    <script src="js/editCourse.js"></script>
+    <script src="js/information.js"></script>
+    <script src="js/validation.js"></script>
+</body>

@@ -1,0 +1,71 @@
+.ecustScore{
+    float:left;
+    width:40%;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+.luebeckScore{
+    float: right;
+    width: 40%;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+#btnGroup{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+/* auto-scaling */
+@media screen and (max-width:1200px){
+    .ecustScore, .luebeckScore{
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    .luebeckScore{
+        margin-top:20px;
+    }
+    /* 表格居中 */
+    table{
+        margin:auto;
+    }
+    .courseAdd{
+        text-align: center;
+    }
+}
+
+.courseAdd{
+    margin-top: 3%;
+}
+.courseAdd span{
+    margin-right: 5px;
+}
+.addNum{
+    width:30px;
+}
+
+.splitLine{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box{
+    display: none;
+    width: 315px;
+    height: auto;
+    background:#FFFFDF;
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+    position: absolute;
+
+}
+
+.subTitle{
+    font-size: 200%;
+    height: 90px;
+}
