@@ -110,10 +110,9 @@ button{
     cursor: pointer;
 }
 
-/* #calculateBtn{
-    border-radius: 15px;
-    background-color: yellow;
-    height: 40px;
-    width:150px;
-
-} */
+#calculateBtn{
+    border-radius: 5px;
+    border-color: #c38e00;
+    color: #000;
+    background-image: linear-gradient(#ffef7c,#ffd86b,#ffe272);
+}
