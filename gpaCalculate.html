@@ -19,10 +19,10 @@
 
         <div class="ecustScore">
             <table id="table1">
-                <tr class="subTitle"><td colspan="3"><center>Ecust Courses</center></td></tr>
+                <tr class="subTitle"><td colspan="3"><center>Ecust Courses<button class="resetBtn" onclick="resetEcustCourse()"></button></center></td></tr>
                 <tr>
-                    <td>Course Name<button onclick="editEcustCourseName()">edit</button></td>
-                    <td>Ecust score<a href="#" onmouseover="display()" onmouseout="disappear()">[details]</a>
+                    <td>Course Name<button class="editBtn" onclick="editEcustCourseName()" ><span></span></button></td>
+                    <td>Ecust score<button class="infoBtn" onmouseover="display()" onmouseout="disappear()">?</button></a>
                         <div id="box1" class="box">
                             Scores of Ecust must be a number you get for the course<br>
                             usually between 0-100<br>
@@ -30,7 +30,7 @@
                     </div>
                     
                     </td>
-                    <td>credit<a href="#" onmouseover="displayGP()" onmouseout="disappearGP()">[details]</a>
+                    <td>credit<button class="infoBtn" onmouseover="displayGP()" onmouseout="disappearGP()">?</button></a>
                         <div id="box3" class="box">
                             credit of Ecust is a number measured by semester hours of the course<br>
                         e.g 6 for Advanced Math, 4 for College English
@@ -68,26 +68,26 @@
             <div class="courseAdd">
                 <span>Ecust Courses</span>
                 <input id="addNumEcust" class="addNum" type="number" min="1" max="50" value="5">
-                <button onclick="addEcustCourse();">add</button>
-                <button onclick="removeEcustCourse()">remove</button>
-                <button onclick="resetEcustCourse()">reset</button>
+                <button class="addBtn" onclick="addEcustCourse();"><span></span></button>
+                <button class="deleteBtn" onclick="removeEcustCourse()"><span></span></button>
+                
             </div>
         </div>
 
         <div class="luebeckScore">
             <table id="table2">
-                <tr class="subTitle"><td colspan="3"><center>THL Courses</center></td></tr>
+                <tr class="subTitle"><td colspan="3"><center>THL Courses<button class="resetBtn" onclick="resetTHLCourse();"></button></center></td></tr>
                 <tr>
-                    <td>Course Name<button onclick="editTHLCourseName()">edit</button></td>
-                    <td>THL score<a href="#" onmouseover="displayTHL()" onmouseout="disappearTHL()">[details]</a>
+                    <td>Course Name<button class="editBtn" onclick="editTHLCourseName()"><span></span>></button></td>
+                    <td>THL score<button class="infoBtn" onmouseover="displayTHL()" onmouseout="disappearTHL()">?</button></a>
                         <div id="box2" class="box">
                             Scores of THL must be a number in 1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0, 5.0<br>
                         
                     </div></td>
-                    <td>credit<a href="#" onmouseover="displayGPTHL()" onmouseout="disappearGPTHL()">[details]</a>
+                    <td>credit<button class="infoBtn" onmouseover="displayGPTHL()" onmouseout="disappearGPTHL()">?</button></a>
                         <div id="box4" class="box">
-                            credit of THL is a number measured by semester hours of the course<br>
-                        e.g 4 for Internet Programming
+                            credit of THL is a number<br> measured by semester<br>hours of the course<br>
+                        e.g 4 for <br>Internet Programming
                     </div></td>
                 </tr>
                 <tr>
@@ -124,9 +124,9 @@
             <div class="courseAdd">
                 <span>THL Courses</span>
                 <input id="addNumTHL" class="addNum" type="number" min="1" max="50" value="5">
-                <button onclick="addTHLCourse();">add</button>
-                <button onclick="removeTHLCourse()">remove</button>
-                <button onclick="resetTHLCourse();">reset</button>
+                <button class="addBtn" onclick="addTHLCourse();"><span></span></button>
+                <button class="deleteBtn" onclick="removeTHLCourse()"><span></span></button>
+                
             </div>
 
 
@@ -135,12 +135,11 @@
 
     </div>
 
-    <!-- <div><p>------------------------------------------------------------------------------------------------------------</p></div> -->
     <HR align=center width=90% color=#000000 SIZE=1> 
         
         <div id="btnGroup">
         <center>
-            <button onclick="calculate()">
+            <button id="calculateBtn" onclick="calculate()">
                 start calculate
             </button>
             <!-- <button onclick="reset()">
