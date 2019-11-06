@@ -192,3 +192,19 @@ function bestWorstScoreTHL(scoresTHLarr, coursesNameTHL) {
     sessionStorage.setItem("worstScoreTHLName", worstScoreTHLName);
 }
 
+// preload images
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "css/images/addBtn2.png",
+    "css/images/deleteBtn2.png",
+    "css/images/editBtn2.png",
+    "css/images/resetBtn2.png",
+)

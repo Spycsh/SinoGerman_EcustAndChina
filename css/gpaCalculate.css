@@ -72,33 +72,33 @@
 }
 
 .editBtn{
-    background: url("editBtn.png") no-repeat;
+    background: url("images/editBtn.png") no-repeat;
     width: 25px;
     height: 25px;
     border: 0;   
 }
 .addBtn{
-    background: url("addBtn.png") no-repeat;
+    background: url("images/addBtn.png") no-repeat;
     width: 25px;
     height: 25px;
     border: 0;
 }
 .deleteBtn{
-    background: url("deleteBtn.png") no-repeat;
+    background: url("images/deleteBtn.png") no-repeat;
     width: 25px;
     height: 25px;
     border: 0;   
 }
 
 .resetBtn{
-    background: url("resetBtn.png") no-repeat;
+    background: url("images/resetBtn.png") no-repeat;
     width: 25px;
     height: 25px;
     border: 0; 
 }
 
 .infoBtn{
-    background: url("information.png") no-repeat;
+    background: url("images/information.png") no-repeat;
     /* width: 25px;
     height: 25px; */
     border: 0;
