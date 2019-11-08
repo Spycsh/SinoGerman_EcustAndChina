@@ -20,3 +20,18 @@ document.getElementById("bestScoreEcustName").setAttribute("title",  sessionStor
 document.getElementById("worstScoreEcustName").setAttribute("title", sessionStorage.getItem("worstScoreEcustName"));
 document.getElementById("bestScoreTHLName").setAttribute("title", sessionStorage.getItem("bestScoreTHLName"));
 document.getElementById("worstScoreTHLName").setAttribute("title", sessionStorage.getItem("worstScoreTHLName"));
+
+
+function mouseOnHome(){
+    document.getElementById("homeBtn").style.background = "url('css/images/home2.png')"
+}
+
+function mouseOutHome(){
+    document.getElementById("homeBtn").style.background = "url('css/images/home.png')"
+}
+
+function backToMainPage(){
+    window.history.back(-1);
+}
+
+

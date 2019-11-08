@@ -2,6 +2,8 @@
 
 >This GPA caculator can be used by all the students from Ecust students who are looking for master degree in Germany
 
+<b>Author: Chen Sihan<b>
+
 ## function
 
 1. caculate average GPA in each Ecust and Technische Hochschule Luebeck(THL)
@@ -12,7 +14,7 @@
 
 4. calculate overall credits of each Ecust and THL
 
-## feature
+## features
 
 1. input by hand, add and remove rows easily and flexibly
 
@@ -20,7 +22,7 @@
 
 3. detail information to get users know the input format
 
-4. support naming courses by hand, or automatically naming courses when adding courses( e.g. course4)
+4. users can name courses by hand, or courses will be automatically named when adding courses( e.g. course4)
 
 5. responsive design
 
@@ -29,3 +31,14 @@
 7. input in Ecust scores like "98" or "60" will be converted into German GPA "1.0" or "4.0" with the standard
 
 8. special input in Ecust scores like "A" or "A-" will be converted into German GPA "1.0" and "1.3" with the standard
+
+> Example
+
+- an example
+<img src="README_images/example1.png">
+
+- Responsive design
+<img src="README_images/example2.png">
+
+- Result
+<img src="README_images/example3.png">

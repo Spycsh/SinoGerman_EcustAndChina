@@ -54,3 +54,18 @@ td{
     font-size: 200%;
     height: 90px;
 }
+
+#caption{
+    margin-left: 35%;
+}
+
+#homeBtn{
+    margin-left: 5%;
+    background: url("images/home.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
+
+    cursor: pointer;
+}
+

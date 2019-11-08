@@ -1,3 +1,4 @@
+// conversion table from Ecust to Thl 
 var arithmetic = [
     {
         "score": [98, 100],
@@ -56,7 +57,9 @@ var arithmetic = [
     }
 ]
 
-
+// calculate the average GPA
+// the overall GPA
+//
 function calculate() {
     if (validation()) {
         // calculate Ecust average GPA
@@ -98,20 +101,20 @@ function calculate() {
 
         allAverageGPA = (allSumEcust + allSumTHL) / (creditsSumEcust + creditsSumTHL); // average gpa for two school
 
-        alert(allAverageGPA);
+        // alert(allAverageGPA);
 
 
 
         // save the whole credits of each
-        // 总学分
-        sessionStorage.setItem("creditsSumEcust", creditsSumEcust.toFixed(1));
+  
+        sessionStorage.setItem("creditsSumEcust", creditsSumEcust.toFixed(1));  // keep 1 digit
         sessionStorage.setItem("creditsSumTHL", creditsSumTHL.toFixed(1));
         sessionStorage.setItem("creditsSumAll", (creditsSumEcust + creditsSumTHL).toFixed(1));
 
 
         // save average GPA for each school and the overall 
-        // 平均绩点
-        sessionStorage.setItem("allAverageGPA", allAverageGPA.toFixed(2));
+
+        sessionStorage.setItem("allAverageGPA", allAverageGPA.toFixed(2));  // keep 2 digits 
         sessionStorage.setItem("ecustGPA", ecustGPA.toFixed(2));
         sessionStorage.setItem("THLGPA", THLGPA.toFixed(2));
 
@@ -125,9 +128,9 @@ function calculate() {
         bestWorstScoreTHL(scoresTHLarr, coursesNameTHL);
 
         // display the statistics
-        window.open("answer.html");
+        window.open("answer.html", target="_self");
     }
-    else{
+    else {
         alert("Please check input!");
     }
 
@@ -207,4 +210,5 @@ preload(
     "css/images/deleteBtn2.png",
     "css/images/editBtn2.png",
     "css/images/resetBtn2.png",
+    "css/images/home2.png",
 )

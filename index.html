@@ -24,15 +24,16 @@
             <table id="table1">
                 <tr class="subTitle">
                     <td colspan="3">
-                        <center>Ecust Courses<button id="resetBtn1" class="resetBtn" onmouseover="mouseOnReset1()" onmouseout="mouseOutReset1()" title="reset"
-                                onclick="resetEcustCourse()"></button></center>
+                        <center>Ecust Courses<button id="resetBtn1" class="resetBtn" onmouseover="mouseOnReset1()"
+                                onmouseout="mouseOutReset1()" title="reset" onclick="resetEcustCourse()"></button>
+                        </center>
                     </td>
                 </tr>
                 <tr>
                     <td>Course Name<button class="editBtn" id="editBtn1" title="edit" onmouseover="mouseOnEdit1()"
                             onmouseout="mouseOutEdit1()" onclick="editEcustCourseName()"><span></span></button></td>
                     <td>Ecust score<button class="infoBtn" onmouseover="display()"
-                            onmouseout="disappear()">?</button></a>
+                            onmouseout="disappear()">?</button>
                         <div id="box1" class="box">
                             Scores of Ecust must be a number you get for the course<br>
                             usually between 0-100<br>
@@ -41,7 +42,7 @@
 
                     </td>
                     <td>credit<button class="infoBtn" onmouseover="displayGP()"
-                            onmouseout="disappearGP()">?</button></a>
+                            onmouseout="disappearGP()">?</button>
                         <div id="box3" class="box">
                             credit of Ecust is a number measured by semester hours of the course<br>
                             e.g 6 for Advanced Math, 4 for College English
@@ -53,7 +54,7 @@
                     <td><input class="EcustScore" id="gradePoint1" type="text"></td>
                     <td><input class="EcustCredit" id="credit1" type="text"></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td><input class="EcustCourseName" id="course2" type="text" value="course2" disabled></td>
                     <td><input class="EcustScore" id="gradePoint2" type="text"></td>
                     <td><input class="EcustCredit" id="credit2" type="text"></td>
@@ -62,16 +63,6 @@
                     <td><input class="EcustCourseName" id="course3" type="text" value="course3" disabled></td>
                     <td><input class="EcustScore" id="gradePoint3" type="text"></td>
                     <td><input class="EcustCredit" id="credit3" type="text"></td>
-                </tr>
-                <!-- <tr>
-                    <td><input class="EcustCourseName" id="course4" type="text" value="course4" disabled></td>
-                    <td><input class="EcustScore" id="gradePoint4" type="text"></td>
-                    <td><input class="EcustCredit" id="credit4" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input class="EcustCourseName" id="course5" type="text" value="course5" disabled></td>
-                    <td><input class="EcustScore" id="gradePoint5" type="text"></td>
-                    <td><input class="EcustCredit" id="credit5" type="text"></td>
                 </tr> -->
 
 
@@ -93,22 +84,24 @@
             <table id="table2">
                 <tr class="subTitle">
                     <td colspan="3">
-                        <center>THL Courses<button title="reset" id="resetBtn2" class="resetBtn" onmouseover="mouseOnReset2()" onmouseout="mouseOutReset2()" onclick="resetTHLCourse();"></button>
+                        <center>THL Courses<button title="reset" id="resetBtn2" class="resetBtn"
+                                onmouseover="mouseOnReset2()" onmouseout="mouseOutReset2()"
+                                onclick="resetTHLCourse();"></button>
                         </center>
                     </td>
                 </tr>
                 <tr>
-                    <td>Course Name<button id="editBtn2" class="editBtn" title="edit" onmouseover="mouseOnEdit2()" onmouseout="mouseOutEdit2()"
-                            onclick="editTHLCourseName()"><span></span></button></td>
+                    <td>Course Name<button id="editBtn2" class="editBtn" title="edit" onmouseover="mouseOnEdit2()"
+                            onmouseout="mouseOutEdit2()" onclick="editTHLCourseName()"><span></span></button></td>
                     <td>THL score<button class="infoBtn" onmouseover="displayTHL()"
-                            onmouseout="disappearTHL()">?</button></a>
+                            onmouseout="disappearTHL()">?</button>
                         <div id="box2" class="box">
                             Scores of THL must be a number in 1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0, 5.0<br>
 
                         </div>
                     </td>
                     <td>credit<button class="infoBtn" onmouseover="displayGPTHL()"
-                            onmouseout="disappearGPTHL()">?</button></a>
+                            onmouseout="disappearGPTHL()">?</button>
                         <div id="box4" class="box">
                             credit of THL is a number<br> measured by semester<br>hours of the course<br>
                             e.g 4 for <br>Internet Programming
@@ -120,7 +113,7 @@
                     <td><input id="gradePoint1" class="THLScore" type="text"></td>
                     <td><input id="credit1" class="THLCredit" type="text"></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td><input id="course2" class="THLCourseName" type="text" value="course2" disabled></td>
                     <td><input id="gradePoint2" class="THLScore" type="text"></td>
                     <td><input id="credit2" class="THLCredit" type="text"></td>
@@ -129,17 +122,8 @@
                     <td><input id="course3" class="THLCourseName" type="text" value="course3" disabled></td>
                     <td><input id="gradePoint3" class="THLScore" type="text"></td>
                     <td><input id="credit3" class="THLCredit" type="text"></td>
-                </tr>
-                <!-- <tr>
-                    <td><input id="course4" class="THLCourseName" type="text" value="course4" disabled></td>
-                    <td><input id="gradePoint4" class="THLScore" type="text"></td>
-                    <td><input id="credit4" class="THLCredit" type="text"></td>
-                </tr>
-                <tr>
-                    <td><input id="course5" class="THLCourseName" type="text" value="course5" disabled></td>
-                    <td><input id="gradePoint5" class="THLScore" type="text"></td>
-                    <td><input id="credit5" class="THLCredit" type="text"></td>
                 </tr> -->
+
 
 
 
@@ -150,8 +134,10 @@
                 <span>THL Courses</span>
                 <input title="the number of courses you want to add/delete" id="addNumTHL" class="addNum" type="number"
                     min="1" max="50" value="5">
-                <button id="addBtn2" title="add THL courses" class="addBtn" onmouseover="mouseOnAdd2()" onmouseout="mouseOutAdd2()" onclick="addTHLCourse();"><span></span></button>
-                <button id="deleteBtn2" title="delete THL courses" class="deleteBtn" onmouseover="mouseOnDelete2()" onmouseout="mouseOutDelete2()" onclick="removeTHLCourse()"><span></span></button>
+                <button id="addBtn2" title="add THL courses" class="addBtn" onmouseover="mouseOnAdd2()"
+                    onmouseout="mouseOutAdd2()" onclick="addTHLCourse();"><span></span></button>
+                <button id="deleteBtn2" title="delete THL courses" class="deleteBtn" onmouseover="mouseOnDelete2()"
+                    onmouseout="mouseOutDelete2()" onclick="removeTHLCourse()"><span></span></button>
 
             </div>
 
