@@ -42,3 +42,13 @@
 
 - Result
 <img src="README_images/example3.png">
+
+
+> Notice
+
+Local file can only be read with Chrome, but you can view this file on my git pages with Chrome and IE and Safari:
+
+<a href="https://spycsh.github.io/SinoGerman_EcustAndChina/">https://spycsh.github.io/SinoGerman_EcustAndChina/</a>
+
+
+~Thank you for viewing!
